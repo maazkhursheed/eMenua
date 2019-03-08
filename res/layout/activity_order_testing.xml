@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="600dp"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:weightSum="3"
+            android:background="@drawable/order_page">
+        <!--android:weightSum="5"-->
+        <!--android:layout_height="wrap_content"-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:weightSum="2"
+                      android:layout_marginLeft="75dp"
+                      android:layout_marginRight="75dp"
+        android:layout_weight=".25">
+
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/table_number"
+                    android:id="@+id/table_number_caption"
+                    android:textSize="40dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+
+            />
+            <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Table lable"
+                    android:id="@+id/tableNumber_label"
+                    android:layout_weight="1"
+                    android:textSize="40dp"
+                    android:textColor="@color/black"
+            />
+
+        </LinearLayout>
+        <!--android:layout_height="wrap_content"-->
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:id="@+id/lineatlayout_list"
+                      android:orientation="horizontal"
+                      android:weightSum="1"
+                      android:layout_weight="2.5">
+
+            <!--android:layout_below="@+id/textView"-->
+            <ListView
+                    android:layout_below="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="300dp"
+                    android:id="@+id/order_page_list"
+                    android:layout_weight="1"
+
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginRight="75dp"
+                    android:layout_marginTop="20dp"
+
+
+                    android:dividerHeight="2dp"
+                    android:divider="@color/black"
+                    android:layout_marginBottom="70dp"
+
+            />
+        </LinearLayout>
+        <!--<LinearLayout -->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:weightSum="2">-->
+        <!--<Button android:layout_width="0dp" -->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--/>-->
+        <!---->
+        <!---->
+        <!--</LinearLayout>-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <LinearLayout android:layout_width="400dp"
+                      android:layout_height="0dp"
+                      android:orientation="horizontal"
+                      android:weightSum="2"
+                      android:layout_gravity="center"
+        android:layout_weight=".25">
+
+            <Button android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="View Order"
+                    android:layout_weight="1"
+                    android:id="@+id/orderView"
+                    android:layout_marginRight="75dp"
+                    android:background="@color/actionbar_color"
+            />
+            <!--android:background="@color/actionbar_color"-->
+            <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Proceed"
+                    android:layout_marginLeft="75dp"
+                    android:id="@+id/proceedButton"
+                    android:background="@color/actionbar_color"
+                    />
+
+
+        </LinearLayout>
+        <!--android:background="@color/actionbar_color"-->
+
+
+    </LinearLayout>
+
+</RelativeLayout>

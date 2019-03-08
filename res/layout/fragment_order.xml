@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/fragment_order_parent"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <FrameLayout
+            android:id="@+id/fragment_order_thankyouFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:visibility="gone"
+            >
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/thankyou_mess"
+                />
+
+    </FrameLayout>
+
+    <LinearLayout
+            android:id="@+id/fragment_order_amountLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/main_order_frame">
+
+        <TextView
+                  android:id="@+id/fragment_order_textTotal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/total_text"
+                  android:textSize="30sp"
+                  android:textColor="@color/order_fragment_total_color"
+                  android:layout_gravity="center"/>
+
+        <TextView
+                android:id="@+id/fragment_order_textTotalPrice"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="45sp"
+                android:text="1500.0"
+                android:textStyle="bold"
+                android:textColor="@color/order_fragment_amount_color"
+                android:layout_marginBottom="5dp"/>
+
+        <TextView
+                android:id="@+id/order_currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"/>
+
+        <TextView
+                android:id="@+id/grid_TotalItemsQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/order_fragment_item_color"
+                android:textSize="30sp"
+                android:text="12 item(s)"
+                android:layout_gravity="center" />
+
+        <Button
+                android:id="@+id/fragment_order_confirmButton"
+                android:layout_width="330dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="40dp"
+                android:text="@string/confirm_order_text"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/order_confirm_button_text"
+                android:background="@drawable/confirm_order_bg"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+   <!-- <GridView
+            android:id="@+id/fragment_order_grid"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:verticalSpacing="25dp"
+        >
+
+    </GridView> -->
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_order_frame"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+             >
+
+       <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NAME"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/orderlist_header_item_color"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UNIT PRICE"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/orderlist_header_item_color"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="120dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QTY"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/orderlist_header_item_color"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="90dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/orderlist_header_item_color"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="130dp" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REMOVE"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/orderlist_header_item_color"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/itemOrderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:paddingTop="5dp" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/fragment_detail_parent"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="4"
+              android:background="@drawable/dialog_order_bg">
+
+    <FrameLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="200dp"
+            >
+
+        <ImageView
+                android:src="@drawable/food_placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+
+                />
+
+        <TextView
+                android:id="@+id/detail_fragment_itemPrice"
+                 android:textSize="25sp"
+                 android:paddingLeft="10dp"
+                 android:paddingRight="10dp"
+                 android:paddingBottom="2dp"
+                 android:paddingTop="2dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="right|bottom"
+                 android:layout_marginRight="40dp"
+                 android:background="@drawable/text_view_price"/>
+
+
+    </FrameLayout>
+
+    <TextView
+              android:id="@+id/detail_fragment_itemName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/detail_fragment_itemDesc"
+              android:text="@string/dummy_text"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_fragment_itemOrderButton"
+            android:layout_gravity="right"
+            android:text="@string/order_now"
+            android:background="@drawable/button_maroon_bg"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+
+            />
+</LinearLayout>

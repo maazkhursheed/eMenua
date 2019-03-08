@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <array name="entries">
+          <item>@drawable/plate1</item>
+          <item>@drawable/plate2</item>
+          <item>@drawable/plate3</item>
+          <item>@drawable/plate4</item>
+          <item>@drawable/plate5</item>
+          <item>@drawable/plate6</item>
+          <item>@drawable/plate7</item>
+          <item>@drawable/plate8</item>
+    </array>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/item_order_list_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+               >
+
+
+    <ImageView
+            android:id="@+id/item_order_list_image"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sample_burger1_no_bg"
+            android:scaleType="centerInside"
+            android:listSelector="@drawable/list_item_selector"/>
+
+</RelativeLayout>

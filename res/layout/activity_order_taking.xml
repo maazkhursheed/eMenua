@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+             >
+
+    <LinearLayout  android:id="@+id/mainLayout"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/order_page"
+                   android:layout_gravity="center"
+                   android:orientation="vertical"
+            >
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+
+            <TextView
+
+                      android:id="@+id/table_number_caption"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/table_number"
+                      android:textSize="60sp"
+                      android:textColor="@color/black"
+                    />
+            <TextView
+                    android:id="@+id/tableNumber_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="60sp"
+                    android:textColor="@color/black"
+                    />
+            <EditText
+
+                    android:id="@+id/tableNumber_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="60sp"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:visibility="gone"
+                    />
+        </LinearLayout>
+
+    <ListView
+            android:id="@+id/order_page_list"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="2dp"
+            android:divider="@color/black"
+            android:layout_marginBottom="70dp">
+
+
+    </ListView>
+
+    </LinearLayout>
+      <!--  <ImageView
+                android:id="@+id/order_page_print"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/printer"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true">
+
+        </ImageView> -->
+
+
+    <Button
+            android:id="@+id/proceedButton"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="PROCEED"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="500dp"
+            android:background="@color/actionbar_color"
+            />
+
+
+          <Button
+                  android:id="@+id/orderView"
+                  android:layout_width="160dp"
+                  android:layout_height="wrap_content"
+                  android:text="VIEW ORDERS"
+                  android:layout_marginLeft="60dp"
+                  android:layout_marginTop="500dp"
+                  android:background="@color/actionbar_color"
+                  />
+
+</RelativeLayout>

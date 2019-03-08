@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:pj="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg"
+                >
+
+<FrameLayout android:layout_width="match_parent" android:layout_height="650dp">
+
+    <com.attribe.waiterapp.controls.Carousel
+            android:id="@+id/carousel"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_marginTop="150dp"
+            pj:UseReflection="false"
+            pj:SelectedItem="0"
+            android:animationDuration="200"
+            />
+
+    <ImageView android:layout_width="match_parent" android:layout_height="650dp"
+               android:background="@drawable/logo"
+
+            />
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_gravity="left|center_vertical"
+            android:src="@drawable/rotate_icon_bumzees"/>
+  <!--  <ImageView
+            android:layout_width="35dp"
+            android:layout_height="55dp"
+            android:id="@+id/imageView3"
+            android:layout_gravity="center_horizontal|bottom"
+            android:src="@drawable/hand_icon_bumzees"/>   -->
+
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

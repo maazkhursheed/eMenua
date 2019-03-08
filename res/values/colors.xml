@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name ="orange">#FF9022</color>
+    <color name="maroon">#7C2315</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grid_selected_color">#60D604</color>
+    <color name="black_opaque">#95000000</color>
+    <color name="abc_search_url_text_normal">#7fa87f</color>
+    <color name="abc_search_url_text_selected">@android:color/black</color>
+    <color name="abc_search_url_text_pressed">@android:color/black</color>
+    <color name="dark_grey">#363636</color>
+    <color name="abc_input_method_navigation_guard">@android:color/black</color>
+    <color name="action_bar">#B92700</color>
+    <color name="ginsoy_primary">#F39200</color>
+    <color name="bumzees_primary_red">#d0222b</color>
+    <color name="bumzees_primary_purple">#822e8c</color>
+    <color name="black">#000000</color>
+    <color name="selector_focused">#E2E2E2</color>
+    <color name="selector_selectd">#E2E2E2</color>
+    <color name="text_primary">#F39200</color>
+    <color name="row_item_shade">#F2F2F2</color>
+    <color name="decrement_button">#B7B7B7</color>
+    <color name="gq_primary">#A90F41</color>
+    <color name="generic_red">#D7454C</color>
+
+    <!-- Generic centralized color schema -->
+
+                        <!-- Start Main Screen !-->
+    <color name="actionbar_color">#991D01</color>
+    <color name="video_frame_color">#991D01</color>
+    <color name="category_image_circle_default_color">#ffffff</color>
+    <color name="category_image_circle_primary_color">#991D01</color>
+    <color name="category_selector_color">#991D01</color>
+    <color name="grid_item_name_color">#991D01</color>
+    <color name="grid_item_price_color">#991D01</color>
+                        <!-- End Main Screen !-->
+
+                        <!-- Start Detail Screen!-->
+    <color name="order_button_color">#ffffff</color>
+    <color name="order_button_text_color">#991D01</color>
+    <color name="category_back_button_color">#991D01</color>
+    <color name="category_back_button_text_color">#ffffff</color>
+    <color name="order_increment_button_color">#60D604</color>
+    <color name="order_decrement_button_color">#B7B7B7</color>
+    <color name="order_increment_button_text_color">#ffffff</color>
+    <color name="order_decrement_button_text_color">#ffffff</color>
+                        <!-- End Detail Screen !-->
+
+                        <!--Start Order Screen!-->
+    <color name="orderlist_header_item_color">#000000</color>
+    <color name="orderlist_item_name_color">#000000</color>
+    <color name="orderlist_item_price_color">#000000</color>
+    <color name="orderlist_item_quantity_color">#000000</color>
+    <color name="orderlist_item_total_price_color">#000000</color>
+    <color name="order_fragment_amount_layout_color">#ffffff</color>
+    <color name="order_fragment_amount_color">#000000</color>
+    <color name="order_fragment_item_color">#000000</color>
+    <color name="order_fragment_total_color">#000000</color>
+    <color name="order_confirm_button">#7C2315</color>
+    <color name="order_confirm_button_text">#ffffff</color>
+                      <!-- End Order Screen !-->
+</resources>

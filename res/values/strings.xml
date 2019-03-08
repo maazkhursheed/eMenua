@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">dm</string>
+    <string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</string>
+    <string name="order_now">Order now</string>
+    <string name="label_total">Total</string>
+    <string name="total_text">Total: </string>
+    <string name="confirm_order_text">CONFIRM ORDER NOW</string>
+    <string name="proceed_to_order" >Place order</string>
+    <string name="proceed_to_order_message">Proceed to order?</string>
+    <string name="pass_code_title">Enter your pass code</string>
+    <string name="pass_code_button_text">Verify</string>
+    <string name="dialog_register_registerButton">Register </string>
+    <string name="title_device_registration">Device setup</string>
+    <string name="add_to_order">Add to order</string>
+    <string name="order_placed" type="id">Order placed</string>
+    <string name="select_items_prompt">Please select items to order</string>
+    <string name="getting_data">Downloading restaurant data</string>
+    <string name="getting_categories">Syncing Categories</string>
+    <string name="getting_items">Syncing items</string>
+    <string name="hint_enter_passcode">Enter restaurant passcode</string>
+    <string name="hint_enter_deviceName">Enter device name</string>
+    <string name="no_connection">Please switch on internet</string>
+    <string name="settings_button_text">Go to settings</string>
+    <string name="cancel_button_text">Cancel</string>
+    <string name="no_connection_title">No Network</string>
+    <string name="registering_device">Let us register your device</string>
+    <string name="cheff_description">We made this dish(and the chilli paste) using Tesco mixed chillies and it was FAR
+        too Spicy !!
+    </string>
+    <string name="cheff_name">Cheff\'s Comments</string>
+    <string name="items">item(s)</string>
+    <string name="view_cart">Your Order</string>
+    <string name="currency">Rs</string>
+    <string name="zero"> 0.0</string>
+    <string name="zero_quantity">0 Item</string>
+    <string name="feedback_question1">Good</string>
+    <string name="feedback_question2">Satisfactory</string>
+    <string name="feedback_question3">Below standard</string>
+    <string name="post_feedback">Post Feedback</string>
+    <string name="table_number">Table # :</string>
+    <string name="back_to_menu">Back to menu</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_detail_screen">DetailScreen</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_order_screen">OrderScreen</string>
+    <string name="title_activity_order_log_screen">OrderLogScreen</string>
+    <string name="label_waiter_name">Waiter Name</string>
+    <string name="label_section_name">Section Name</string>
+    <string name="button_register">Register</string>
+
+</resources>

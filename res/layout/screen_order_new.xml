@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:layout_margin="20dp"
+        >
+
+    <LinearLayout
+            android:id="@+id/layout_left"
+            android:orientation="vertical"
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+        <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="BBQ SANDWICHES"
+                  android:textSize="50sp"
+                  android:textColor="@color/maroon"/>
+
+        <ImageView
+                android:layout_width="500dp"
+                android:layout_height="200dp"
+                android:src="@drawable/food_placeholder"
+                android:scaleType="center"
+                />
+
+        <com.devsmart.android.ui.HorizontalListView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+        </com.devsmart.android.ui.HorizontalListView>
+    </LinearLayout>
+
+    <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/layout_left"
+            >
+
+        <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="User Reviews(12)"
+                  android:textSize="30sp"
+                android:textColor="@color/maroon"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

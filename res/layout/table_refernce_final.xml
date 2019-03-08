@@ -1,0 +1,110 @@
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:layout_width="750dp"-->
+                <!--android:layout_height="280dp"-->
+                <!--android:background="@color/selector_focused"-->
+<!--&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--android:layout_height="fill_parent"-->
+
+    <LinearLayout
+
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="750dp"
+                   android:layout_height="280dp"
+    android:id="@+id/main_dialogue_layout"
+    android:orientation="vertical"
+            android:background="@color/selector_focused"
+    android:weightSum="3">
+
+        <LinearLayout
+                android:id="@+id/edittext_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:weightSum="2">
+
+            <EditText
+                    android:id="@+id/table_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:hint="Enter Table Cover"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/table_reference_text_size"
+                    android:background="@color/white"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@null" />
+
+
+            <EditText
+                    android:id="@+id/table_number"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:hint="Enter Table Number"
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/table_reference_text_size"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@null"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="3"
+                android:id="@+id/buttons_linearlayouts"
+
+        >
+
+            <Button
+                    android:layout_weight="1"
+                    android:id="@+id/cancelFragment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="CANCEL"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/actionbar_color"
+                    android:layout_marginRight="75dp"
+                    android:layout_marginTop="40dp"
+          />
+
+            <Button
+                    android:layout_weight="1"
+                    android:id="@+id/printOrders"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="PRINT"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="45dp"
+                    android:background="@color/order_increment_button_color"/>
+
+            <Button
+                    android:layout_weight="1"
+                    android:id="@+id/addOrders"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Add Orders"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="45dp"
+                    android:background="@color/order_increment_button_color"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--</RelativeLayout>-->

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:et_autoCompleteMode="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/selector_focused">
+
+    <RelativeLayout
+                    android:layout_width="750dp"
+                    android:layout_height="280dp"
+                    >
+        
+        
+        <EditText
+                android:id="@+id/table_cover"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="Enter Table Cover"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/table_reference_text_size"
+                android:background="@color/white"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null" />
+
+
+    <EditText
+            android:id="@+id/table_number"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Enter Table Number"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionDone"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/table_reference_text_size"
+            android:layout_marginTop="110dp"
+            android:background="@color/white"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"/>
+
+        <Button
+                android:id="@+id/cancelFragment"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="CANCEL"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:elevation="10dp"
+                android:background="@color/actionbar_color"/>
+
+        <Button
+                android:id="@+id/printOrders"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="PRINT"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="200dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+
+                android:elevation="10dp"
+                android:background="@color/order_increment_button_color"/>
+
+        <!--<Button-->
+                <!--android:id="@+id/addOrders"-->
+                <!--android:layout_width="160dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="ADD ORDERS"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_marginBottom="15dp"-->
+                <!--android:elevation="10dp"-->
+                <!--android:background="@color/generic_red"-->
+                <!--/>-->
+
+    </RelativeLayout>
+</LinearLayout>

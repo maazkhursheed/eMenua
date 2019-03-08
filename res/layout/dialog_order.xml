@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+
+              android:id="@+id/dialog_order_parent"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="blocksDescendants"
+              android:padding="10dp"
+              android:background="@drawable/grid_item_background_selected">
+
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/dialog_order_itemImage"
+            android:src="@drawable/food_placeholder"/>
+
+    <com.attribe.waiterapp.customUI.TextViewProxiOrange
+              android:id="@+id/dialog_order_itemName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="40dp"
+              android:layout_marginLeft="10dp"
+              android:layout_toRightOf="@+id/dialog_order_itemImage"
+              android:textSize="25sp"
+            />
+
+
+
+
+    <NumberPicker
+            android:id="@+id/dialog_order_numberPicker"
+            android:layout_width="50dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/dialog_order_itemName"
+            android:solidColor="#F3F3F3"
+
+            />
+
+    <com.attribe.waiterapp.customUI.TextViewProxiOrange
+              android:id="@+id/dialog_order_itemPrice"
+              android:layout_alignBaseline="@+id/dialog_order_itemName"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_toRightOf="@+id/dialog_order_numberPicker"
+              android:textSize="25sp"
+              android:layout_marginLeft="40dp"/>
+
+    <com.attribe.waiterapp.customUI.TextViewProxiOrange
+            android:id="@+id/item_detail_price"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_order_numberPicker"
+            android:layout_alignRight="@+id/dialog_order_numberPicker"
+            android:layout_marginTop="50dp"
+            android:textSize="25sp"/>
+
+    <LinearLayout
+                  android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/item_detail_price"
+                  android:layout_marginTop="20dp"
+                  android:layout_centerInParent="true">
+
+        <Button android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="-"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/button_decrement_bg"/>
+
+
+        <Button android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:text="+"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/button_decrement_bg"/>
+
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Add more item"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/button_orange_bg"
+                android:onClick="addCart"/>
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/dialog_order_buttonOrderNow"
+                android:text="Order now"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/button_orange_bg"
+                android:onClick="orderNow"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="10dp"
+              android:descendantFocusability="blocksDescendants">
+
+
+    <ImageView
+            android:id="@+id/row_category_item_image"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/food_placeholder"
+            android:clickable="true"
+            />
+
+    <com.attribe.waiterapp.customUI.TextViewProxiOrange
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biryani"
+            android:layout_marginLeft="29dp"
+            android:id="@+id/item_row_name"
+            android:layout_alignParentTop="true" android:layout_toRightOf="@+id/row_category_item_image"
+            android:layout_marginTop="21dp"
+            android:textSize="20sp"/>
+
+    <TextView
+              android:id="@+id/item_row_desc"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Delicious Biryani"
+              android:layout_below="@+id/item_row_name"
+              android:layout_alignBottom="@+id/row_category_item_image" android:layout_alignLeft="@+id/item_row_name"/>
+                />
+
+    <com.attribe.waiterapp.customUI.TextViewProxiOrange
+              android:id="@+id/item_row_price"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="250Rs"
+              android:layout_alignTop="@+id/item_row_name"
+              android:layout_alignRight="@+id/row_item_category_item_orderButton"
+              android:textSize="20sp"/>
+    <Button
+            android:id="@+id/row_item_category_item_orderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order"
+            android:background="@drawable/button_orange_bg"
+
+            android:layout_alignBottom="@+id/item_row_desc" android:layout_alignParentRight="true"
+            android:layout_marginRight="85dp"/>
+
+
+</RelativeLayout>

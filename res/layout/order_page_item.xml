@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              >
+
+    <LinearLayout
+            android:layout_width="700dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+
+
+    <com.attribe.waiterapp.customUI.CustomFont
+              android:id="@+id/item_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="25sp"
+              android:text="item Name"
+              android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <com.attribe.waiterapp.customUI.CustomFont
+            android:id="@+id/item_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:textSize="25sp"
+            android:text="item Quantity"
+            android:textColor="@color/black"
+            />
+</RelativeLayout>

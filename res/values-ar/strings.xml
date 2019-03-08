@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">dm</string>
+    <string name="dummy_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</string>
+    <string name="order_now"> اطلب الان</string>
+    <string name="label_total">مجموع</string>
+    <string name="total_text">المجموع</string>
+    <string name="confirm_order_text">تأكيد النظام الآن</string>
+    <string name="proceed_to_order" >أمر مكان</string>
+    <string name="proceed_to_order_message">الشروع في النظام؟</string>
+    <string name="pass_code_title">Enter your pass code</string>
+    <string name="pass_code_button_text">Verify</string>
+    <string name="dialog_register_registerButton">Register </string>
+    <string name="title_device_registration">Device setup</string>
+    <string name="add_to_order">إضافة إلى النظام</string>
+    <string name="order_placed" >تم الطلب</string>
+    <string name="select_items_prompt">يرجى تحديد عناصر لأجل</string>
+
+
+    <string name="category_fastFood">الوجبات السريعة</string>
+    <string name="category_chinese">الصينية</string>
+    <string name="category_pakistani">باكستاني</string>
+    <string name="category_soup">حساء</string>
+    <string name="category_beverages">مشروبات</string>
+    <string name="category_continental">قاري</string>
+    <string name="registering_device">Let us register your device</string>
+
+
+</resources>

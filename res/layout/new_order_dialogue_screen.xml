@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:descendantFocusability="blocksDescendants"
+              android:background="@color/white"
+        >
+
+
+<LinearLayout
+                android:id="@+id/dialog_order_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="520dp"
+                android:orientation="horizontal"
+                android:padding="30dp"
+                android:weightSum="3.1"
+               >
+
+    <CheckBox
+            android:id="@+id/dialog_order_removeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|left"
+            android:button="@drawable/cross"
+           />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Burger"
+            android:textAlignment="viewStart"
+            android:textColor="@color/maroon"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+     />
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2.2"
+
+            android:id="@+id/imageLayOut"
+            android:weightSum="1"
+            android:layout_gravity="start|center">
+
+
+        <TextView
+                android:id="@+id/dialog_order_itemName"
+                android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Les Ifos Burgers"
+                android:textAlignment="viewStart"
+                android:textColor="@color/maroon"
+                android:textSize="30sp"
+                android:layout_marginLeft="30dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+
+        <FrameLayout
+                android:id="@+id/order_image_frame"
+                android:layout_width="620dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+
+                android:background="@drawable/dialog_order_image_bg"
+                android:focusable="false" >
+
+            <ImageView
+                    android:id="@+id/dialog_order_image"
+                    android:layout_width="610dp"
+                    android:layout_height="390dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sample_burger1_no_bg"
+                    android:scaleType="centerCrop"    />
+        </FrameLayout>
+
+
+
+        <!-- yahan gallery view tha-->
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/imageGalleryLayout"
+            android:layout_width="120dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center"
+
+            android:background="#ffffff"
+            >
+
+        <ListView
+                android:id="@+id/imageGalleryViewList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="#ffffff"
+                android:dividerHeight="20.0sp"
+                android:minHeight="?android:attr/listPreferredItemHeight"
+                >
+
+        </ListView>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1.05"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp">
+
+
+
+        <TextView
+                android:id="@+id/item_detail_price"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="30.00"
+                android:textAlignment="center"
+                android:textColor="@color/maroon"
+                android:textSize="40sp"
+                android:layout_alignEnd="@+id/dialog_order_numberPicker"
+                 />
+
+        <NumberPicker
+                android:id="@+id/dialog_order_numberPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="100dp"
+                android:layout_below="@+id/item_detail_price"
+                android:orientation="vertical"
+                android:layout_alignParentEnd="true"/>
+
+        <TextView
+                android:id="@+id/item_detail_desc"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="inclide medium fries and soft drink , a lovely combination to fight with the hunger"
+                android:layout_below="@+id/dialog_order_numberPicker"
+                android:maxLines="4"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_gravity="center"/>
+
+        <Button
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:text="@string/add_to_order"
+                android:background="@drawable/button_maroon_bg"
+                android:onClick="addCart"
+                android:id="@+id/back_to_category"
+                android:layout_below="@+id/item_detail_desc"
+                android:layout_marginTop="75dp"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:layout_marginLeft="5dp"
+                />
+
+      </LinearLayout>
+
+   </LinearLayout>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Views(14)"
+            android:textColor="@color/maroon"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:layout_marginLeft="260dp"
+            />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-McFadden says"
+            android:textSize="18sp"
+            android:layout_gravity="right"
+            android:layout_marginRight="65dp"
+            android:textAlignment="center"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cooking Jenny"
+            android:textColor="@color/maroon"
+            android:textSize="20sp"
+            android:maxLines="1"
+            android:layout_marginLeft="200dp"
+            android:layout_marginRight="565dp"
+            android:layout_marginBottom="5dp"/>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_marginLeft="190dp">
+
+        <TextView
+                android:id="@+id/cheffDescription"
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:text="We made this dish(and the chilli paste) using Tesco mixed chillies and it was FAR too Spicy !! My husband really liked it but it blew my head off!!"
+                android:textSize="20sp"
+                android:maxLines="3"
+                />
+
+        <TextView
+                android:id="@+id/comments_area"
+                android:layout_width="400dp"
+                android:layout_height="80dp"
+                android:text="' This is not your average chicken burger-with a soy, sesame and honey marinade this humble BBQ '"
+                android:textColor="@color/maroon"
+                android:textSize="20sp"
+                android:maxLines="3"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="50dp"
+                android:textAlignment="center"
+                android:layout_toRightOf="@+id/cheffDescription"
+                />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

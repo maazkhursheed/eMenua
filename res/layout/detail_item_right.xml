@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+>
+
+    <LinearLayout
+
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="50dp"
+            android:background="#ffffff">
+
+     <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             >
+
+         <TextView
+                 android:id="@+id/dialog_order_totalPrice1"
+                 android:layout_width="115dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="30dp"
+                 android:text="Total:"
+                 android:textColor="@color/black"
+                 android:textSize="45sp"
+                 android:gravity="left|start" />
+
+         <TextView
+             android:id="@+id/item_detail_price"
+             android:layout_width="170dp"
+             android:layout_height="wrap_content"
+             android:text="3000.0"
+             android:textColor="@color/bumzees_primary_red"
+             android:textSize="50sp"
+             android:gravity="center"
+             android:layout_marginTop="30dp"
+             />
+
+         <TextView
+                 android:id="@+id/dialog_order_totalPrice2"
+                 android:layout_width="50dp"
+                 android:layout_height="wrap_content"
+                 android:text="Rs"
+                 android:textColor="@color/bumzees_primary_red"
+                 android:textSize="40sp"
+                 android:gravity="right"
+                 android:layout_marginTop="30dp"
+                 />
+
+     </LinearLayout>
+
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/buttonDecrement"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:text="-"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/button_decrement_bg"/>
+
+
+        <Button
+                android:id="@+id/buttonIncrement"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="+"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/button_decrement_bg"/>
+
+        <TextView
+                  android:id="@+id/c"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="20dp"
+                  android:textColor="#000000"
+                  android:textSize="30sp"
+                  android:text="1 item(s)"/>
+
+    </LinearLayout>
+    <NumberPicker
+            android:id="@+id/dialog_order_numberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:layout_below="@+id/item_detail_price"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"/>
+
+    <TextView
+            android:id="@+id/item_detail_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="We know how to exceed your expectations and we do it with love !"
+            android:maxLines="4"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            />
+
+        <TextView
+                android:id="@+id/dialog_order_itemDesc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="This tastes amazing, to make it even more amazing"
+                android:maxLines="4"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                />
+
+    <Button
+            android:id="@+id/back_to_category"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:background="@drawable/button_add_order_bumzees"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            />
+
+
+    <LinearLayout
+                  android:id="@+id/post_comments_area"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginTop="60dp"
+                  android:background="@drawable/fb_comment">
+
+ <!--   <FrameLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            >
+
+        <com.joooonho.SelectableRoundedImageView
+                android:id="@+id/circularCheffImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:src="@drawable/zakir1"
+                android:scaleType="centerCrop" />
+
+    </FrameLayout>
+
+    <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="-McFadden says"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_marginRight="65dp"
+            android:textAlignment="center"
+
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"/> -->
+
+    </LinearLayout>
+
+  <LinearLayout
+          android:id="@+id/user_reviews_area"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="120dp"
+          android:orientation="vertical"
+          android:visibility="gone">
+
+
+   <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Reviews "
+             android:textSize="18sp"
+             android:textColor="@color/black"
+           />
+
+   <TextView
+            android:id="@+id/comments_area"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="80dp"
+            android:text="' delicious food.. dynamite prawns were awesome but a bit spicy...'"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:maxLines="3"
+            android:textAlignment="center"
+
+            />
+  </LinearLayout>
+</LinearLayout>
+</LinearLayout>

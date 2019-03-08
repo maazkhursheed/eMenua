@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              >
+
+ <!--   <FrameLayout android:layout_width="180dp"
+                 android:layout_height="120dp"
+                 android:background="@drawable/dialog_order_image_bg"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginTop="10dp"
+                 android:focusable="false">
+
+        <ImageView
+                android:id="@+id/list_item_image"
+                android:layout_width="176dp"
+                android:layout_height="115dp"
+                android:src="@drawable/food_placeholder"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"/>
+
+    </FrameLayout> -->
+
+
+    <TextView
+
+            android:id="@+id/list_itemName"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:text="Les infos burgers
+are very juicy
+and interesting as well"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/orderlist_item_name_color"
+            android:maxLines="3"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"/>
+
+    <TextView
+            android:id="@+id/list_itemPrice"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="4000.0"
+            android:textSize="20sp"
+            android:textColor="@color/orderlist_item_price_color"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"/>
+
+ <Button
+         android:id="@+id/buttonItemDecrement"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:text="-"
+         android:textSize="20sp"
+         android:textStyle="bold"
+         android:textColor="@color/white"
+         android:background="@drawable/button_decrement_bg"
+         android:layout_marginTop="40dp"
+         android:layout_marginLeft="40dp"
+         />
+
+    <TextView
+            android:id="@+id/list_ItemQuantity"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/orderlist_item_quantity_color"
+            android:textSize="20sp"
+            android:text=" 15 "
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"/>
+
+    <Button
+            android:id="@+id/buttonItemIncrement"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="+"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_increment_bg"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"/>
+
+    <TextView
+            android:id="@+id/list_item_quantity_total"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="2000.0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/orderlist_item_total_price_color"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="80dp"
+            />
+
+
+    <CheckBox
+            android:id="@+id/list_item_order_cross"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:button="@drawable/cross"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+
+
+</LinearLayout>

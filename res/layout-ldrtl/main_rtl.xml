@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="right"
+              android:layout_gravity="right"
+              android:background="@drawable/background_burger">
+
+    <fragment
+
+            android:id="@+id/fragment_rtl_itemScreen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.05"
+            android:layout_gravity="right"
+            class = "com.attribe.waiterapp.screens.CategoryItemScreen"
+            />
+    <fragment
+
+            android:id="@+id/mainScreen_rtl_categoryList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.95"
+            class = "com.attribe.waiterapp.screens.CategoryScreen"
+
+            />
+</LinearLayout>

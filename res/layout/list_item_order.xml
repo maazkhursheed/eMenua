@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+                >
+
+    <TextView
+            android:id="@+id/list_item_order_ItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biryani"
+            android:layout_marginLeft="50dp"
+            />
+
+    <TextView
+            android:id="@+id/list_item_order_ItemQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:layout_marginLeft="50dp"
+            />
+
+    <TextView
+            android:id="@+id/list_item_order_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:layout_marginLeft="50dp"
+            />
+
+
+</LinearLayout>
